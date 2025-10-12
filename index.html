@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven - Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">STEVEN</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- The hero section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Steven</span></h1>
+        <p class="hero-subtitle">Computer Science Student & Aspiring Full-Stack Developer</p>
+        <p class="hero-description">
+          Passionate about creating innovative solutions through code. Currently pursuing my degree while building amazing projects and gaining real-world experience.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="../portfolio/images/me.jpeg" alt="Steven Lin - Professional headshot" class="profile-img">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about" class="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- My about section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm Steven Lin, a software developer who specializes in building high-quality applications and websites. I enjoy working with Python, Java, C++, JavaScript, SQL, and other tools and technologies to create everything from full applications to small projects that make life easier.
+          </p>
+          <p>
+            I'm always eager to keep learning, improve my skills, and help others when I can. I’m passionate about programming and enjoy exploring new technologies to create smart and effective solutions to problems.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><h4>3+</h4><p>Projects Completed</p></div>
+            <div class="stat"><h4>3+</h4><p>Years Experience</p></div>
+            <div class="stat"><h4>0</h4><p>Internships</p></div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="../portfolio/images/metwo.jpg" alt="Steven Lin" class="about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- my projects section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A showcase of my recent work</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image"><img src="../portfolio/images/project-3.png" alt="Maze Task Screenshot"></div>
+          <div class="project-content">
+            <h3>Maze Task</h3>
+            <p>A game where you move through a maze of paths and walls. You start at the entrance and use the arrow keys (↑ ↓ ← →) to move. The goal is to reach the exit. You might hit dead ends, so you’ll need to turn back and try other ways. The game ends when you reach the exit.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stevenlin0/Maze-Task" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image"><img src="../portfolio/images/project-1.png" alt="Electronic Circuit Simulator App Screenshot"></div>
+          <div class="project-content">
+            <h3>Electronic Circuit Simulator</h3>
+            <p>A tool where you can drag and drop parts to build and test circuits. After signing up or logging in, you can start a project and use a zoomable canvas to add batteries, resistors, switches, wires, and bulbs. Each part shows real-time feedback like voltage, current, and resistance. Your projects are saved in a database so you can load or delete them later. When you connect the parts, the simulator shows how electricity flows and how components, like light bulbs, react.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stevenlin0/CircuitSimulator" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image"><img src="../portfolio/images/project-2.png" alt="Cash Climb App Screenshot"></div>
+          <div class="project-content">
+            <h3>Cash Climb</h3>
+            <p>An app that helps you manage your money by saving, investing, and tracking it all in one place. After you sign up, you can set up your profile, personalize your dashboard, and use tools to track spending, income, and budgets. You can also add your assets and debts, and the app will automatically show your net worth.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stevenlin0/Budgeting_App" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- My skills section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technical and Professional skills I have</p>
+      </div>
+      <div class="skills-categories">
+
+        <!-- programming languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+            <div class="skill-item"><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+          </div>
+        </div>
+
+        <!-- technologies & frameworks -->
+        <div class="skill-category">
+          <h3>Technologies & Frameworks</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div><span class="skill-percentage">80%</span></div>
+            <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div><span class="skill-percentage">80%</span></div>
+            <div class="skill-item"><span class="skill-name">Next.js</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+          </div>
+        </div>
+
+        <!-- tools & software -->
+        <div class="skill-category">
+          <h3>Tools & Software</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">Visual Studio Code</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">IntelliJ</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">NetBeans</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+            <div class="skill-item"><span class="skill-name">Replit</span><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div><span class="skill-percentage">70%</span></div>
+          </div>
+        </div>
+
+        <!-- my professional skills -->
+        <div class="skill-category">
+          <h3>Professional Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">Problem Solving</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Critical Thinking</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Attention to Detail</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Communication</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+          </div>
+        </div>
+
+        <!-- My work & team skills -->
+        <div class="skill-category">
+          <h3>Work & Team Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">Time Management</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Organization</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Staying Calm Under Pressure</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+            <div class="skill-item"><span class="skill-name">Adaptability</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+            <div class="skill-item"><span class="skill-name">Teamwork</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div><span class="skill-percentage">85%</span></div>
+          </div>
+        </div>
+
+        <!-- My specialized skills -->
+        <div class="skill-category">
+          <h3>Specialized Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item"><span class="skill-name">UI/UX Design</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div><span class="skill-percentage">90%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My hobbies section -->
+  <section id="hobbies" class="hobbies">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <p class="section-subtitle">What I enjoy doing in my free time</p>
+      </div>
+      <div class="hobbies-grid">
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-book"></i></div><h3>Reading Light Novels & Manga</h3><p>I enjoy Japanese literature and storytelling. Reading light novels and manga lets me explore different cultures and styles while improving my imagination and language skills.</p></div>
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-tv"></i></div><h3>Watching Anime</h3><p>Anime is more than just entertainment for me. It inspires storytelling and character design, and I enjoy the character development, visual art, and cultural insights it offers.</p></div>
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-gamepad"></i></div><h3>Gaming</h3><p>Gaming helps me relax and also pushes me to think. Strategy and story games improve my problem-solving and help me find new ways to approach challenges.</p></div>
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-music"></i></div><h3>Playing Violin & Guitar</h3><p>Music helps me stay focused and creative. Playing violin and guitar teaches me patience, discipline, and gives me a fun way to express myself outside of coding.</p></div>
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-language"></i></div><h3>Learning New Languages</h3><p>I enjoy learning new languages as a way to connect with different cultures and broaden my perspective. It also improves my memory and communication.</p></div>
+        <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-plane"></i></div><h3>Traveling & Exploring</h3><p>Traveling lets me see new places, meet different people, and learn about other cultures. It keeps me curious, flexible, and open to new ideas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My experience section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="section-subtitle">My journey so far</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Computer Science Student</h3>
+            <h4>Farmingdale State College</h4>
+            <span class="timeline-date">2022 - Present</span>
+            <p>Currently pursuing a Bachelor's in Computer Science.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Front Desk Receptionist</h3>
+            <h4>Village Fitness</h4>
+            <span class="timeline-date">2023 - 2024</span>
+            <p>Provided assistance to members, answering inquiries about gym operations and policies, creating/updating invoices for new and existing members, managing finances and carrying out transactions, ensuring cleanliness of equipment and locker rooms, and being able to multitask.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My contact section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">I’m open to new projects, ideas, or just a friendly chat.</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>stevenlin041@gmail.com</p></div></div>
+          <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>516 500 5061</p></div></div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><p>Syosset, New York</p></div></div>
+          <div class="social-links">
+            <a href="https://github.com/stevenlin0" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/steven-lin-87a034385" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send Me a Message</h3>
+          <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required></div>
+          <div class="form-group"><input type="text" id="subject" name="subject" placeholder="Subject" required></div>
+          <div class="form-group"><textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy; 2025 Steven Lin. All rights reserved.</p>
+      <p>Designed and built using HTML, CSS, and JavaScript</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
